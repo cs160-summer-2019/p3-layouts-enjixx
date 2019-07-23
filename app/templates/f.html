@@ -12,9 +12,44 @@
 
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
+    <style type="text/css">
+      
+      html, body {
+        background-color: purple;
+        
+      }
+      
+       .medium-container {
+        display: flex;        
+        flex-wrap: wrap;  
+        flex-direction: column;
+        justify-content:flex-start;          
+      }
+      
+      .box {
+        
+        background-color: orange;
+        width: fill;
+        height: 260px;     
+      }
+      .one {
+        border-bottom: 30px solid purple;
+      }
+      .three {
+        border-top: 30px solid purple;
+        
+      }
+            
+ 
+    
+    </style>
 	</head>
 	<body>
 		<!-- Your layout here -->
+     <div class = 'medium-container'>
+        <div class = 'box one'></div>
+        <div class = 'box two'></div>
+        <div class = "box three"></div>
 
 	</body>
 </html>
